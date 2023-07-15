@@ -5,3 +5,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.seat {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px orange solid;
+  border-radius: 0.5rem;
+}
+
+.first-seat {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}

@@ -706,10 +706,25 @@ const Seat = () => {
             ]
         }
     ];
-    console.log(arrSeat);
     return (
         <div>
-
+            {arrSeat.map((seatGroup, index) => (
+                <div key={index}>
+                    {seatGroup.danhSachGhe.map((seat) => (
+                        <div>
+                            <button className='first-seat'>
+                                {seat.hang}
+                            </button>
+                            <button
+                                key={seat.soGhe}
+                                className={`seat ${index === 0 ? "first-seat" : ""}`}
+                            >
+                                {seat.soGhe}
+                            </button>
+                        </div>
+                    ))}
+                </div>
+            ))}
         </div>
     )
 }
